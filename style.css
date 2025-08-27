@@ -1,68 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=poppins&display=swap');
+body{
+    font-family: "poppins",sans-serif;
+    background-color: rgb(0, 225, 255);
 }
-.container{
-    background-color: #222242;
-    height: 100vh;
-    width: 100%;
+section{
     text-align: center;
-    position: absolute;
+    border-radius: 10px;
+    width: 400px;
+    margin: auto;
+    background-color: #fff;
+    margin-top: 75px;
+    box-shadow: 0px 10px 36px 16px;
 }
-.wrapper{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.game--title{
+    padding-top: 20px;
 }
-.wrapper p{
-    position: relative;
-    display: inline-block;
-    color: #ffffff;
-    z-index: 9999;
-    font-size: 48px;
-    margin-bottom: 120px;
+.game--container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    width: 150px;
+    margin: 120px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
-.wrapper p::before{
-    content: '';
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background-color: #151538;
-    z-index: -1;
-    border-radius: 50%;
-	left: -10%;
-    top: -118%;
-    animation-name: shine;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-}
-@keyframes shine{
-    0%,100%{
-        box-shadow: 0px 0px 32px -12px rgba(246, 180, 0, .5);
-    }
-    50%{
-        box-shadow: 0px 0px 32px 3px rgba(246, 180, 0, .5);
-    }
+.cell{
+    font-family: "poppins",sans-serif;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0 0 1px #222121;
+    cursor: pointer;
+    line-height: 50px;
+    font-size: 20px;
 }
 button{
-    background-color: #222242;
-    padding: 10px 38px;
-    border: 1px solid #A9A9A9;
-    border-radius: 28px;
+    margin-bottom: 20px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
     color: #fff;
-    transition: all .2s ease;
-    outline: 0;
+    background-color: rgb(38, 255, 22);
+    cursor: pointer;
 }
-button:not(:last-child){
-    margin-right: 20px;
+button:hover{
+    transition: 0.25s;
+    background-color: rgb(38, 255, 22);
 }
-button:hover,
-button:focus
-{
-    border-color: #F6B400;
-    color: #F6B400;
-    box-shadow: 0px 4px 27px -12px #F6B400;
-}
+
