@@ -1,48 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=poppins&display=swap');
-body{
-    font-family: "poppins",sans-serif;
-    background-color: rgb(0, 225, 255);
-}
-section{
-    text-align: center;
-    border-radius: 10px;
-    width: 400px;
-    margin: auto;
-    background-color: #fff;
-    margin-top: 75px;
-    box-shadow: 0px 10px 36px 16px;
-}
-.game--title{
-    padding-top: 20px;
-}
-.game--container{
-    display: grid;
-    grid-template-columns: repeat(3,auto);
-    width: 150px;
-    margin: 120px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-.cell{
-    font-family: "poppins",sans-serif;
-    width: 50px;
-    height: 50px;
-    box-shadow: 0 0 0 1px #222121;
-    cursor: pointer;
-    line-height: 50px;
-    font-size: 20px;
-}
-button{
-    margin-bottom: 20px;
-    height: 30px;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    background-color: rgb(38, 255, 22);
-    cursor: pointer;
-}
-button:hover{
-    transition: 0.25s;
-    background-color: rgb(38, 255, 22);
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #0c0d0d;
+  color: hsl(0, 22%, 96%);
 }
 
+header {
+  background: #ae1266;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background: #333;
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 50px;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #ddc363;
+}
+
+section {
+  padding: 30px;
+  text-align: center;
+}
+section h2 {
+  margin-bottom: 10px;
+  color: #e3dd32;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* All Paragraphs */
+p {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.6;
+}
